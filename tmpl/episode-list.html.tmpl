@@ -1,21 +1,19 @@
 {{ define "episodeList" }}
 {{ template "pageHeader" . }}
-{{ $d := . }}
-<h1>Episodes</h1>
-<table class="pure-table pure-table-horizontal listTable" id="episodeListTable">
-	<tr>
-		<th>Id</th>
-		<th>Title</th>
-		<th>Link</th>
-	</tr>
+
+<h2>{{ index .Sdata 1 }}</h2>
+
+<p>
+<img src="{{ index .Sdata 0 }}" alt="{{ index .Sdata 1 }}" style="float:left; margin-right: 12px;">
+
+
+
 	{{ range .Data }}
-	<tr>
-		<td class='dataColumn'><a href='{{ .Link }}'>{{ .Id }}</a></td>
-		<td class='dataColumn'><a href='{{ .Link }}'>{{ .Title }}</a></td>
-		<td class='dataColumn'>{{ .Link }}</a></td>
-	</tr>
+	<a href="{{ .Link }}" class="pure-button pure-button-primary pure-button-link">{{ .Title }}</a>
 	{{ end }}
-</table>
+
+</p>
+
 {{ template "pageFooterTop" . }}
 {{ template "pageFooterBottom" . }}
 {{ end }}

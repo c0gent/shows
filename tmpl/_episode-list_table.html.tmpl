@@ -1,16 +1,7 @@
 
 <h1>Episodes</h1>
-<table class="pure-table pure-table-horizontal listTable" id="episodeListTable">
-	<tr>
-		<th>Id</th>
-		<th>Title</th>
-		<th>Link</th>
-	</tr>
-	{{ range .Data }}
-	<tr>
-		<td class='dataColumn'><a href='{{ .Link }}'>{{ .Id }}</a></td>
-		<td class='dataColumn'><a href='{{ .Link }}'>{{ .Title }}</a></td>
-		<td class='dataColumn'>{{ .Link }}</a></td>
-	</tr>
-	{{ end }}
-</table>
+
+{{ range .Data }}
+<a href="{{ .Link }}" class="pure-button pure-button-primary pure-button-link">{{ .Title }}</a>
+
+{{ end }}

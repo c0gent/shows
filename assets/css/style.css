@@ -193,6 +193,15 @@ body {
     border-collapse: collapse;
 }
 
+.pure-button-link {
+    margin-top:20px;
+}
+
+.pure-button-link:visited {
+    margin-top:20px;
+    background:#000;
+}
+
 .pure-table tr td {
     font-size: 0.9em;
 }
