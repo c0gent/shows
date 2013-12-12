@@ -1,0 +1,74 @@
+{{ define "pageHeader" }}<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="/public/images/favicon.ico">
+
+	<title>{{ .PageTitle }}</title>
+
+	<link rel="stylesheet" href="/assets/vendor/pure/pure-min.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/vendor/font-awesome-4.0.3/css/font-awesome.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="../../assets/js/html5shiv.js"></script>
+	<script src="../../assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="bodyContainer">
+	<header class="header">
+		<nav class="pure-menu pure-menu-open pure-menu-horizontal">
+			<a href="/sales/list" class="pure-menu-heading">{{ .PageTitle }}</a>
+			<ul>
+				<li><a href="/">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main class="mainContent">
+		
+		{{ end }}
+
+		{{ define "pageFooterTop" }}
+
+	</main>
+
+	<footer class="footer">
+		<div class="footerContent">
+			<div class="pure-g-r">
+				<div class="pure-u-1-2">
+					<a href="#" class="copyr">&copy;Nick Sanders Productions</a>
+				</div>
+				<div class="pure-u-1-2">
+					<div class="bottom-nav">
+						<div class="pure-menu pure-menu-open pure-menu-horizontal">
+							<ul>
+								<li><a href="/">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</footer>
+</div>
+
+{{ end }}
+
+{{ define "pageFooterBottom" }}
+
+</body>
+</html>
+<!-- Maybe use this later when I inline some CSS
+<noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
+<noscript><link rel="stylesheet" href="/assets/vendor/pure-min.css"></noscript>
+-->
+{{ end }}

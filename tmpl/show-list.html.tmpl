@@ -1,0 +1,10 @@
+{{ define "showList" }}
+{{ template "pageHeader" . }}
+{{ $d := . }}
+<div class="pure-g-r">
+	{{ template "_show-list_table" . }}
+</div>
+{{ template "pageFooterTop" . }}
+{{ template "pageFooterBottom" . }}
+{{ end }}
+<!-- class="pure-table pure-table-horizontal listTable" -->
